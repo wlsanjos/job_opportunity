@@ -51,9 +51,25 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem 'figaro'
+gem 'simple_form'
+gem 'devise'
+gem 'haml'
+gem "haml-rails", "~> 2.0"
+
+#gem 'kaminari'
+#gem 'kaminari-bootstrap'
+#gem 'ransack'
+#gem 'select2-rails'
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'awesome_print'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -65,6 +81,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'mailcatcher'
 end
 
 group :test do
